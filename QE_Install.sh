@@ -48,7 +48,7 @@ echo "Download e Instalção do QE"
 wget https://gitlab.com/QEF/q-e/-/archive/qe-7.2/q-e-qe-7.2.tar.gz 
 tar -zxvf q-e-qe-7.2.tar.gz 
 cd q-e-qe-7.2 
-./configure --enable-parallel=yes --enable-openmp=yes -with-scalapack F90=mpifort F77=mpifort MPIF90=mpifort CC=mpicc
+./configure --enable-parallel=yes --enable-openmp=yes F90=mpifort F77=mpifort MPIF90=mpifort CC=mpicc
 make -j2 all 
 echo 'export PATH="/root/q-e-qe-7.2/bin:$PATH"' >> ~/.bashrc
 
