@@ -1,9 +1,28 @@
+###################################
+#      USANDO PSEUDOPOTENCIAL     #
+###################################
 ! HF def2-SVP
 ! OPT Freq
 ! PAL2
 %maxcore 4000
 %basis
         NewECP Fe "SDD" end
+        NewGTO Fe "def2-TZVP" end
+end
+* xyz $CHRG $MULTI
+COORDENADAS DAS ESPÉCIES
+*
+
+%----------------------------------------------------------------
+
+###################################
+#       USANDO FULL-ELECTRON      #
+###################################
+! HF def2-SVP
+! OPT Freq
+! PAL2
+%maxcore 4000
+%basis
         NewGTO Fe "def2-TZVP" end
 end
 * xyz $CHRG $MULTI
